@@ -1,0 +1,168 @@
+.img-wrapper{ 
+    max-width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   }
+  
+   img{ 
+    max-width: 100%;
+    max-height: 100%;
+   }
+  
+  @media screen and (min-width:576px){ 
+    .carousel-inner{ 
+      display: flex;
+      overflow: hidden;
+    }
+    .carousel-item{
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 5);
+    }
+  
+   .img-wrapper{ 
+    height: 10vw;
+   }
+  
+  }
+  .carousel-inner{ 
+    padding: 1em;
+  }
+  .card{ 
+    margin: 0 .5em;
+  }
+  .why-choose-us-cards .card i {
+    color: #D76083;
+    background: #FFEEF1;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  .why-choose-us-cards .card h5 {
+    color: #131518;
+  }
+  .why-choose-us-cards .card p {
+    font-size: 0.9em;
+    color: #6B7A8C;
+  }
+  
+  .custom-bg-color {
+      background-color: #E3F4ED; /* Your custom background color */
+      color: #45B486; /* Ensures text is readable */
+  }
+  
+  .custom-bg-color:hover {
+      background-color: #45a049; /* Slightly different color on hover */
+  }
+
+  .custom-bg-color-header {
+    background-color: #F5F8FA; /*Your custom background color
+    /* background-color: #134476;  */
+  }
+
+  .custom-bg-color-body {
+    background-color: #F5F8FA; /*Your custom background color*/
+    }
+   
+  .custom-border {
+    border-color: #EEF2F5; /*Your custom background color*/
+    border-radius: 16px;
+    }
+     
+    body {
+      font-family: 'Roboto', sans-serif;
+  }
+
+/* Target the arrow in the accordion button */
+.accordion-button::after {
+  content: "\f078"; /* Unicode for Font Awesome down chevron, if using Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Font Awesome icon font, adjust if using a different icon set */
+  font-weight: 900; /* Font weight for solid icons in Font Awesome */
+  color: #007bff; /* Blue color for the arrow */
+  transition: transform 0.2s; /* Smooth transition for the rotation effect */
+  
+}
+
+/* Rotate the arrow when the accordion is expanded */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+ 
+}
+
+
+  /* Customize the color of the accordion button when active */
+.accordion-button:not(.collapsed) {
+  color: #000000; /* Text color for the active button */
+  background-color: #F5F8FA; /* Background color for the active button */
+  border-color: #FFFFFF; /* Border color for the active button */
+  border: none; /* Remove the border around the accordion item */
+  box-shadow: none;
+}
+
+/* Customize the color of the accordion button in its default state */
+.accordion-button {
+  color: #000; /* Text color for the inactive button */
+  background-color:  #F5F8FA; /* Background color for the inactive button */
+  border-color:  #F5F8FA; /* Border color for the inactive button */
+  border: none; /* Remove the border around the accordion item */
+  border-width: 0px;
+  box-shadow: none;
+  
+}
+
+/* Remove border from the accordion button */
+/* .accordion-button {
+  border: none; /* Remove the border around the button */
+  /* box-shadow: none; Remove the box-shadow if any */
+  /* border-width: 0px; */
+/* } */
+
+/* Remove border from the accordion item */
+.accordion-item {
+  border: none; /* Remove the border around the accordion item */
+}
+
+/* Optional: Remove border around the accordion body */
+.accordion-body {
+  border: none; /* Remove the border around the body if it exists */
+
+}
+
+
+
+
+
+.navbar-nav .nav-link {
+  color: #6B7A8C; /* Default color for all nav links */
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:focus {
+  color: #5194FA;
+  /* Color for the active link */
+}
+
+.navbar-nav .nav-link.btn-primary {
+  color: white; /* Ensure button text remains white */
+}
+
+/* If you're using a specific class to denote the active link */
+.navbar-nav .nav-link.active {
+  background-color: transparent; /* Ensure background color doesn't override text color */
+}
+
+
+/* image center footer*/
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Or adjust as needed */
+  width: 100px; /* Or adjust as needed */
+  margin: 0 auto; /* Centers the div itself */
+}
